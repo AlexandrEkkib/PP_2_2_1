@@ -25,7 +25,7 @@ public class MainApp {
 //      for (User user : users) {
 //         System.out.println( user.toString());
 //      }
-      System.out.println( userService.getUserByModelSeriesCar("model10101",123));
+      System.out.println( userService.getUserByModelSeriesCar("model1001",123));
       context.close();
    }
 }

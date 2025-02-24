@@ -15,7 +15,8 @@ public class Car {
     private  int series;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id")
+//    @JoinColumn(name = "id") //  норм работает
+    @JoinColumn(name = "user_id") // почему-то выдает null на запрос
     private User user;
 
     public Car() {
