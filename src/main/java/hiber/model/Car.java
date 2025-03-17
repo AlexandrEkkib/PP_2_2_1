@@ -14,9 +14,7 @@ public class Car {
     @Column(name = "series")
     private  int series;
 
-    @OneToOne(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "id") //  норм работает
-    @JoinColumn(name = "user_id") // почему-то выдает null на запрос
+    @OneToOne(mappedBy = "car")
     private User user;
 
     public Car() {
